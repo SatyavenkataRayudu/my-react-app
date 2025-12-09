@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+  animation: fadeInDown 1s ease-in;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  margin: 10px 0 40px;
+  opacity: 0.9;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeInUp 1s ease-in;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.info-box li {
+  padding: 10px 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-box li:last-child {
+  border-bottom: none;
+}
+
+.info-box li:before {
+  content: "✓ ";
+  color: #4ade80;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.version {
+  margin: 30px 0;
+  animation: fadeIn 2s ease-in;
+}
+
+.version p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.small {
+  font-size: 0.9em !important;
+  opacity: 0.8;
+}
+
+.workflow {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: fadeInUp 1.5s ease-in;
+}
+
+.workflow-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.arrow {
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+  }
+  
+  .info-box {
+    padding: 20px;
+  }
+  
+  .workflow-steps {
+    flex-direction: column;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+}
