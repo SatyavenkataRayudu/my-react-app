@@ -7,8 +7,7 @@ function App() {
       <header className="App-header">
         <div className="container">
           <h1>🚀 Auto-Deployed React App</h1>
-          <p className="subtitle">Powered by AWS CodePipeline & CodeBuild</p>
-          
+          <p className="subtitle">🚀 Auto-deployed! Version 2.0</p>
           <div className="info-box">
             <h2>✨ Features</h2>
             <ul>
